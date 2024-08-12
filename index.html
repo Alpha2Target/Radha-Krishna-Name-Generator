@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Radha Krishna Name Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Body and Background */
+   /* Body and Background */
+body {
+  background: radial-gradient(circle, #f0e6f6, #e3d0c9); /* Radial gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+}
+
+/* Container for all content */
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow around the container */
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  background-image: url('data:image/jpeg;base64,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'); /* Background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image in the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+
+    /* Main Heading */
+    .main-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #3b1c1c; /* Deep pinkish red color */
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Light shadow for divine effect */
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Scaling effect on hover for the heading */
+    .main-heading:hover {
+      transform: scale(1.1);
+      color: #292121; /* Brighter red on hover */
+    }
+
+    /* Heading Texts */
+    .main-heading span {
+      display: block;
+    }
+
+    /* Input styling */
+    .form-control {
+      font-size: 1.5rem;
+      padding: 15px;
+      border: 2px solid #6a1b29; /* Border color to match the header */
+      border-radius: 8px;
+      background: #fff;
+      color: #6a1b29;
+      margin-bottom: 20px;
+      width: calc(100% - 32px); /* Adjust width to fit container */
+      box-sizing: border-box; /* Include padding and border in element's total width and height */
+      text-align: center; /* Center the text inside the input field */
+    }
+
+    /* Button styling */
+    .btn-custom {
+      font-size: 1.2rem;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: #6a1b29; /* Deep pinkish red color */
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #d32f2f; /* Brighter red on hover */
+      transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
+
+    .btn-custom:active {
+      background: #c62828; /* Darker red on click */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .main-heading {
+        font-size: 2rem;
+      }
+
+      .form-control {
+        font-size: 1.2rem;
+        padding: 12px;
+      }
+
+      .btn-custom {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Main Heading with Scaling Effect -->
+    <div class="main-heading">
+      <span>RadhaVallabh Shri Harivansh</span>
+      <span>Shri Vrindavan Shri Vanchandra</span>
+    </div>
+    
+    <!-- Content -->
+    <input type="text" class="form-control" id="nameInput" placeholder="Names" readonly>
+    <button class="btn-custom" id="generateNameButton">Generate Random Name</button>
+  </div>
+
+  <script>
+    // Name array
+    let array = [
+    "RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath","RadhaGopiNath",
+    "RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind","RadhaGovind",
+    "Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari","Banke Bihari",
+    "RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman","RadhaRaman",    
+    "RadhaVallabh", "RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh","RadhaVallabh",
+      "Sri Radhika", "Sri Krishnavallabha", "Sri Krishnapriya", "Sri Krishna kanta",
+      "Sri Krishna-aatmika", "Sri Vishnu priya", "Sri Acyuta priya", "Sri Damodar priya",
+      "Sri Kanu priya", "Sri Hari kanta", "Sri Hari priya", "Sri Vrishbhanu dulari",
+      "Sri Kirtida nandini", "Sri Pradhana gopika", "Sri Ved para", "Sri Veda garbha",
+      "Sri Venu Vadya", "Sri Gita Gamya", "Sri Jivaanandayini", "Sri Vilasini", "Sri Hladini",
+      "Sri Trailokya sundari", "Sri Kamala sundari", "Sri Vrindavan vilasini", "Sri Vrindavaneshvari",
+      "Sri Gopa Anand pradayini", "Sri Raasheshvari", "Sri Raas priya", "Sri Goloka swamini",
+      "Sri Jagannath Priya", "Sri Vrinda", "Krishna", "Keshava", "Madhav", "Radha nath", "Radhesh",
+      "Rukminesh", "Madhusudhan", "Murari", "Manohari", "Kanha", "Kanhaiya", "Chit choor",
+      "Makhan chor", "Nand lal", "Nand Kishore", "Yashoda Nandan", "Vasudeva", "Devaki Nandan",
+      "Jagannath", "Jagdish", "Janardan", "Jagat guru", "Narayan", "Vishnu", "Laxmi pati", "Mohan",
+      "Gopal", "Gopi Nath", "Vrindavaneshvar", "Yogeshvar", "Parth Sarthi", "Murli Manohar",
+      "Murlidhar", "Govardhan Girdhari", "Girdhar Gopal", "Mor mukut dhari", "Vallabh", "Bihari",
+      "Banke bihari", "Kishan", "Leela dhar", "Aditya", "Chatur Bhuj", "Chaliya", "Achyuta",
+      "Aajanma", "Kamal", "Krishneshwar", "Krishhnav", "Shyam", "Ghanshyam", "Girdhari", "Bal gopal",
+      "Laddu gopal", "Abijeet", "Dwarkadhish", "Arijit", "Mukund", "Brijesh", "Suresh", "Brij Gopal",
+      "Govind", "Govinda", "Hariah", "Gwala", "Hrishikesh", "Jagmohan", "Kalia", "Manmohan",
+      "Madan", "Madanmohan", "Satya narayan", "Hari", "Krishna", "Kanha", "Shyam", "Gopal",
+      "Giridhar", "Govind", "Madan Mohan", "Yashodha Nandan", "Madhav", "Keshav", "Govardhandhari",
+      "Makhan chor", "Damodar", "Madhusudan", "Radharaman", "Sudarshandhari", "Bankey bihari",
+      "Murari", "Dwarkadheesh", "Janardan", "Vasudev", "Hari", "Rukmini vallabh", "Narayan",
+      "Devaki nandan", "Hrishikesh", "Gopinath", "Murlidhar", "Achyut", "Parthsarathi",
+      "Vrindavaneshwari", "Raseswari", "Ganndeshwari", "Vrajeshwari", "Rasa mandala madhya",
+      "Gopika", "Radhika", "Ganndarvika", "Manini", "Radha Kunda", "Madhav", "Govinda", "Gopal",
+      "Krishna", "Hari", "Kanha", "kanhaiya", "vrindavan dulhara", "Yashodanand", "Devakinandan",
+      "Vasudeva", "Murari", "Nand", "Kishore", "Kunwar", "Natwar", "Banke Bihari", "Giridhar",
+      "Keshav", "Shyama", "Vitthal", "Jagganatha", "Shani", "Mohan", "Madhusudan", "Harish",
+      "Manohar", "Mahesh", "Nandan", "Nityanand", "Dwarkapati", "Dwarkadish", "Gopalpriya",
+      "Dharmdhyaksha", "Gyaneshwara", "Gopinath", "Achyuta", "Radharaman", "Damodara", "Janardana"
+    ];
+
+    // Function to get a random integer within a specified range
+    function getRandomIndex(max) {
+      return Math.floor(Math.random() * max);
+    }
+
+    // Function to set a random name in the input field
+    function displayRandomName() {
+      let randidx = getRandomIndex(array.length);
+      document.getElementById('nameInput').value = array[randidx];
+    }
+
+    // Add event listener to the button
+    document.getElementById('generateNameButton').addEventListener('click', displayRandomName);
+  </script>
+</body>
+</html>
